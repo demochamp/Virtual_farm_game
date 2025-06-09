@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Farm Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌾 Virtual Farm Game</h1>
+
+  <!-- Crop Selection UI -->
+  <div class="controls">
+    <label for="cropSelect">Choose a Crop:</label>
+    <select id="cropSelect">
+      <option value="carrot">🥕 Carrot</option>
+      <option value="tomato">🍅 Tomato</option>
+      <option value="corn">🌽 Corn</option>
+    </select>
+  </div>
+
+  <div class="farm">
+    <!-- 6 Plots with background-image in div -->
+    <div class="plot" onclick="handlePlotClick(this)">
+      <div class="plant-img" style="background-image: url('plant_img.jpeg');"></div>
+      <span class="plantText">Click to plant 🌱</span>
+    </div>
+    <div class="plot" onclick="handlePlotClick(this)">
+      <div class="plant-img" style="background-image: url('plant_img.jpeg');"></div>
+      <span class="plantText">Click to plant 🌱</span>
+    </div>
+    <div class="plot" onclick="handlePlotClick(this)">
+      <div class="plant-img" style="background-image: url('plant_img.jpeg');"></div>
+      <span class="plantText">Click to plant 🌱</span>
+    </div>
+    <div class="plot" onclick="handlePlotClick(this)">
+      <div class="plant-img" style="background-image: url('plant_img.jpeg');"></div>
+      <span class="plantText">Click to plant 🌱</span>
+    </div>
+    <div class="plot" onclick="handlePlotClick(this)">
+      <div class="plant-img" style="background-image: url('plant_img.jpeg');"></div>
+      <span class="plantText">Click to plant 🌱</span>
+    </div>
+    <div class="plot" onclick="handlePlotClick(this)">
+      <div class="plant-img" style="background-image: url('plant_img.jpeg');"></div>
+      <span class="plantText">Click to plant 🌱</span>
+    </div>
+  </div>
+
+  <div class="info">
+    <p>💰 Coins: <span id="coins">0</span></p>
+    <p>🌱 Seeds: <span id="seeds">3</span></p>
+    <button onclick="buySeeds()">Buy Seed (-5 coins)</button>
+  </div>
+
+  <!-- Sound Effects -->
+  <audio id="plantSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+  <audio id="harvestSound" src="https://www.fesliyanstudios.com/play-mp3/394"></audio>
+  <audio id="backgroundMusic" src="path/to/your/background-music.mp3" loop autoplay></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
